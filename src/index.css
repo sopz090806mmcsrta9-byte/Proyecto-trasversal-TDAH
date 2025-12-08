@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+  /* Fondo premium animado */
+  background: linear-gradient(-45deg, #d480cd, #8742d6, #1f738d, #87e9e1);
+  background-size: 400% 400%;
+  animation: moveBg 18s ease infinite;
+}
+
+@keyframes moveBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.light { filter: brightness(1); }
+.dark { filter: brightness(.7); }
+
+/* MODO ENFOQUE TDAH */
+.focus-mode {
+  animation: none !important;
+  background: #e9eafc !important;
+  filter: saturate(0.8);
+}
+
+.focus-mode * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Botones más grandes y claros */
+.focus-mode button {
+  font-size: 1.3rem !important;
+  background: #ffffff !important;
+  color: #2b296a !important;
+  border: 2px solid #bfc3f5 !important;
+}
+
+/* Textos de mejor contraste */
+.focus-mode h1, 
+.focus-mode h2,
+.focus-mode h3 {
+  color: #1b194f !important;
+  text-shadow: none !important;
+}
+/* MODO LECTURA: TEXTO GRANDE, ESPACIADO, CALMADO */
+.reading-mode * {
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.6px !important;
+}
+
+.reading-mode h1, 
+.reading-mode h2 {
+  font-size: 2.4rem !important;
+}

@@ -1,0 +1,93 @@
+/* Reset básico */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease;
+}
+
+/* Temas */
+body.light {
+  background: #f0f4f8;
+  color: #222;
+}
+
+body.dark {
+  background: #1f1f2e;
+  color: #f0f4f8;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #a7a1fa, #82c6f3);
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Panel superior */
+.top-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+/* Área de contenido */
+.content-area {
+  min-height: 70vh;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #b286f8, #6775f5);
+}
+
+/* Botones del footer */
+.footer button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #cd8afa, #88dbf0);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.footer button:hover {
+  transform: scale(1.1);
+}
+
+/* Tarjetas (MainPanel, Games, Materials, Teachers, Rewards) */
+.card {
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Para iconos y títulos dentro de tarjetas */
+.card span {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
